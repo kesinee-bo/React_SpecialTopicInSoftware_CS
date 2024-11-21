@@ -1,4 +1,4 @@
-# Install & Tools for React Web development (TypeScript/JavaScript)
+# Install & Tools for React Web development (TypeScript/JavaScript) (อยู่ระหว่างการจัดทำและปรับปรุงเนื้อหา)
 
 ## ขั้นตอนในการสร้างโปรเจกต์ React
 

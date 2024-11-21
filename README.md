@@ -10,7 +10,7 @@
 * การใช้งาน Git ในการจัดการโค้ด
 
     **เอกสาร:**
-    * [พื้นฐานของ JavaScript เพื่อการเขียน React](01_JavaScript.md)
+    * [พื้นฐานของ JavaScript เพื่อการเขียน React](01_JavaScript.md) (อยู่ระหว่างการจัดทำและปรับปรุงเนื้อหา)
 
 
 ### 2) เริ่มต้นกับ React และ TypeScript (8 ชั่วโมง)
@@ -20,7 +20,7 @@
 * การใช้งาน Props และ State ใน React
 
     **เอกสาร:**
-    * [Install & Tools for React Web development (TypeScript/JavaScript)](02_ReactIntro.md)
+    * [Install & Tools for React Web development (TypeScript/JavaScript)](02_ReactIntro.md)  (อยู่ระหว่างการจัดทำและปรับปรุงเนื้อหา)
 
 ### 3) State Management และ React Hooks (8 ชั่วโมง)
 * แนะนำ React Hooks (useState, useEffect)
