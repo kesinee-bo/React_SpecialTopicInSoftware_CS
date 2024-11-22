@@ -1,8 +1,8 @@
 ## Special Topic in Software Development 
 **การพัฒนาเว็บโดยใช้ React (TypeScript) และ Node.js (JavaScript))**
 
-### 1) บทนำสู่การพัฒนาเว็บสมัยใหม่ (4 ชั่วโมง)
-* ภาพรวมของการพัฒนาเว็บทั้งฝั่ง Front-end และ Back-end
+### 1) การพัฒนาเว็บสมัยใหม่ (4 ชั่วโมง)
+* รู้จักกับ Full Stack Development และภาพรวมของการพัฒนาเว็บทั้งฝั่ง Front-end และ Back-end
 * ภาพรวมของ React และ Node.js
 * แนะนำ TypeScript: เปรียบเทียบกับ JavaScript และประโยชน์ในการใช้
 * ติดตั้งเครื่องมือพัฒนา: Node.js  VSCode Git และสร้างโปรเจคพื้นฐาน
