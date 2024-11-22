@@ -1,4 +1,4 @@
-## Specail Topic in Software Development 
+## Special Topic in Software Development 
 **การพัฒนาเว็บโดยใช้ React (TypeScript) และ Node.js (JavaScript))**
 
 ### 1) บทนำสู่การพัฒนาเว็บสมัยใหม่ (4 ชั่วโมง)
