@@ -499,7 +499,7 @@ const element = document.getElementById("myElement");
 element.textContent = "Hello, world!";
 ```
 
-## Using Functions as Values
+### Using Functions as Values
 ฟังก์ชันใน JavaScript สามารถใช้เป็นค่าได้ เช่น การเก็บไว้ในตัวแปร หรือการส่งเป็นพารามิเตอร์ให้กับฟังก์ชันอื่น
 
 ```javascript
