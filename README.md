@@ -20,7 +20,7 @@
 * การใช้งาน Props และ State ใน React
 
     **เอกสาร:**
-    * [Install & Tools for React Web development (TypeScript/JavaScript)](02_ReactIntro.md)  (อยู่ระหว่างการจัดทำและปรับปรุงเนื้อหา)
+    * Install & Tools for React Web development (TypeScript/JavaScript)  (อยู่ระหว่างการจัดทำและปรับปรุงเนื้อหา)
 
 ### 3) State Management และ React Hooks (8 ชั่วโมง)
 * แนะนำ React Hooks (useState, useEffect)
