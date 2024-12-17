@@ -1,6 +1,6 @@
 # JavaScript 
 
-## ทบทวน JavaScriptfile:///home/ssits/Projects/React/ReactNative_Expo_ITGenius_2567/00_Documents/01_IntroReactNative.md
+## ทบทวน JavaScript
 
 
 JavaScript เป็นภาษาโปรแกรมที่ใช้ในการพัฒนาเว็บแอปพลิเคชัน โดยเป็นภาษาที่ใช้งานกันอย่างแพร่หลายในการพัฒนาเว็บแอปพลิเคชัน โดยเฉพาะในการพัฒนา React ซึ่งเป็นไลบรารีสำหรับสร้าง User Interface (UI) ที่มีประสิทธิภาพ ในเอกสารนี้จะกล่าวถึงพื้นฐานของ JavaScript ที่จำเป็นสำหรับการเขียน React
