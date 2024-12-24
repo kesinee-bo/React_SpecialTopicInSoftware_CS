@@ -6,4 +6,8 @@
 
 ### Week 2
 * [เริ่มต้นการสร้างโปรเจ็คด้วย React และเข้าใจการทำงานเบื้องต้น](02_0_ReactIntro.md)  
+
+
+### Week 3
+* [TypeScript](04_TypeScript.md)
 * [เรียนรู้เกี่ยวกับ React Component](03_ReactComponent.md)  
