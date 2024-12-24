@@ -288,6 +288,8 @@ let message: Result = "Hello"; // Error: Type '"Hello"' is not assignable to typ
 
 
 
+## LAB การใช้งาน TypeScript
+
 เขียนโค้ด TypeScript ตามโจทย์ต่อไปนี้
 
 1. **การใช้ Interface**
@@ -301,5 +303,5 @@ let message: Result = "Hello"; // Error: Type '"Hello"' is not assignable to typ
     - สร้างเมธอด `speak` ใน Class `Animal` ที่ส่งค่ากลับเป็นข้อความที่บอกชื่อและอายุของสัตว์
     - สร้างอินสแตนซ์ของ Class `Animal` และเรียกใช้เมธอด `speak`
 
-    
+
 <sup><ins>หมายเหตุ</ins> เอกสารนี้มีการใช้ Generative AI เข้ามาช่วยในการสร้างเอกสารบางส่วน และมีเพิ่มเติมข้อมูล ตลอดจนปรับปรุงข้อมูลเพื่อความเหมาะสมโดยผู้เขียน</sup> 
