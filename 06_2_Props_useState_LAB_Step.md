@@ -82,7 +82,7 @@ const [cartItems, setCartItems] = useState<CartItem[]>([]);
 3. App.tsx อัพเดท cartItems state
 4. React render Component ที่เกี่ยวข้องใหม่
 
-**LAB:**
+**<ins>LAB:</ins>**
 
 1) ใน App.tsx สร้างฟังก์ชัน addToCart เพื่อใช้ในการเพิ่มหนังสือลงในตะกร้า
 
@@ -183,7 +183,7 @@ const [cartItems, setCartItems] = useState<CartItem[]>([]);
 2. เรียกใช้ updateQuantity ที่รับมาจาก Props
 3. App.tsx อัพเดท cartItems state
 
-**LAB:**
+**<ins>LAB:</ins>**
 
 1) ใน App.tsx สร้างฟังก์ชัน updateQuantity เพื่อใช้ในการเปลี่ยนจำนวนหนังสือในตะกร้า
 
