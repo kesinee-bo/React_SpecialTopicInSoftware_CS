@@ -11,3 +11,8 @@
 ### Week 3
 * [TypeScript](04_TypeScript.md)
 * [เรียนรู้เกี่ยวกับ React Component](03_ReactComponent.md)  
+
+
+### Week 4
+* [เรียนรู้การใช้งาน Props และ useState จากโปรเจ็ค ComSci Book Shop](06_1_Props_useState.md)
+* [ฝึกปฎิบัติและแบบฝึกหัด (ComSci Book Shop #1)](06_2_Props_useState_LAB_Step.md)
