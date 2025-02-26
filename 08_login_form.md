@@ -3,7 +3,7 @@
 1) สร้างโปรเจ็คใหม่และติดตั้ง react-login-form
 
 ```
-npm install react-router tailwindcss @tailwindcss/vite react-hook-form sweetalert2
+npm install react-router tailwindcss @tailwindcss/vite react-hook-form sweetalert2 lucide-react
 ```
 
 index.css
