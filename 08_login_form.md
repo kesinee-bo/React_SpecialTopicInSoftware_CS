@@ -297,8 +297,40 @@ function Login() {
 export default Login;
 
 ```
+5) สร้าง routes/ProtectedRoute.tsx
 
-5) AdminHeader ใส่โค้ด Sign Out
+```
+import { ReactNode } from "react"
+import { Navigate } from "react-router"
+
+type ProtectedRouteProps = {
+    redirectPath?: string,
+    children: ReactNode,
+}
+
+// Read token from localStorage
+const token = localStorage.getItem('access_token')
+
+const ProtectedRoute = ({ 
+    redirectPath = '/login', 
+    children }: ProtectedRouteProps) => {
+    return token ? <>{children}</> : <Navigate to={redirectPath} />
+}
+
+export default ProtectedRoute
+```
+
+6) แก้ไข App.tsx
+
+```
+{/* Admin Page */}
+        <Route element={<ProtectedRoute><AdminLayout /></ProtectedRoute> }>
+          <Route path="/admin" element={<AdminHome />} />
+          <Route path="/admin/home" element={<AdminHome />} />
+        </Route>
+```
+
+7) AdminHeader ใส่โค้ด Sign Out
 
 
 ```
@@ -306,10 +338,6 @@ export default Login;
 ```
 
 
-6) สร้าง routes/ProtectedRoute.tsx
 
-```
-
-```
 
 
