@@ -6,6 +6,23 @@
 npm install react-router tailwindcss @tailwindcss/vite react-hook-form sweetalert2
 ```
 
+index.css
+```
+@import "tailwindcss";
+```
+
+vite.config.ts
+```
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(),tailwindcss()],
+})
+```
+
 2) สร้าง layouts/AdminLayout.tsx และ layouts/AuthLayout.tsx
 
 AdminLayout.tsx
