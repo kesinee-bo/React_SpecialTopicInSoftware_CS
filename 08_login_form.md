@@ -10,19 +10,50 @@ npm install react-router tailwindcss @tailwindcss/vite react-hook-form sweetaler
 
 AdminLayout.tsx
 ```
+import AdminHeader from "../components/AdminHeader";
+import Footer from "../components/Footer";
+import { Outlet } from "react-router";
+
+export default function AdminLayout() {
+  return (
+    <>
+      <AdminHeader />
+      <div>
+        <Outlet />
+      </div>
+
+      <Footer />
+    </>
+  );
+}
 
 ```
 
 AuthLayout.tsx
 ```
+import { Outlet } from "react-router";
+
+export default function AuthLayout() {
+  return (
+    <>
+
+      <div>
+        <Outlet />
+      </div>
+
+    </>
+  );
+}
 
 ```
 
-3) สร้าง routes/ProtectedRoute.tsx
+3) กำหนด routes เบื้องต้น ใน App.tsx
 
 ```
 
+
 ```
+
 
 4) สร้าง pages/auth/login.tsx
 
@@ -37,9 +68,11 @@ AuthLayout.tsx
 
 ```
 
-6) กำหนด routes ใน App.tsx
+
+6) สร้าง routes/ProtectedRoute.tsx
+
+```
 
 ```
 
 
-```
