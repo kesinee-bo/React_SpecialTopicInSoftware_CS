@@ -324,17 +324,26 @@ export default ProtectedRoute
 
 ```
 {/* Admin Page */}
-        <Route element={<ProtectedRoute><AdminLayout /></ProtectedRoute> }>
-          <Route path="/admin" element={<AdminHome />} />
-          <Route path="/admin/home" element={<AdminHome />} />
-        </Route>
+<Route element={<ProtectedRoute><AdminLayout /></ProtectedRoute> }>
+    <Route path="/admin" element={<AdminHome />} />
+    <Route path="/admin/home" element={<AdminHome />} />
+</Route>
 ```
 
 7) AdminHeader ใส่โค้ด Sign Out
 
 
 ```
-
+<button
+    className= "text-white hover:text-cyan-400"
+    onClick={() => {
+    localStorage.removeItem("access_token");
+    window.location.href = "/login";
+    }
+}
+>
+    Sign Out
+</button>
 ```
 
 
