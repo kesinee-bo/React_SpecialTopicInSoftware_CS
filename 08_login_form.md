@@ -113,8 +113,57 @@ export default function App() {
 
 4) สร้าง pages/auth/login.tsx
 
+index.css
+
+```
+@import "tailwindcss";
+
+
+@layer base {
+  label {
+    @apply block mb-2 text-gray-500;
+  }
+  
+  input {
+    @apply w-full p-2 mb-3 text-gray-700 border-b-2 border-gray-500 outline-none focus:bg-gray-300;
+  }
+
+}
+
+@layer components {
+  .btn-login {
+    @apply w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 mb-6 rounded-lg;
+  }
+}
 ```
 
+Login.tsx (เฉพาะส่วน form)
+
+```
+{/* form */}
+          <form onSubmit={handleSubmit(onSubmit)}>
+            {/* email */}
+           <div>
+            <label htmlFor="email">
+              email
+            </label>
+            <input type="text" />
+           </div>
+            {/* password */}
+           <div>
+            <label htmlFor="password">
+              password
+            </label>
+            <input type="text" />
+           </div>
+           <div>
+              <input
+                className="btn-login"
+                type="submit"
+                value="Login"
+              />
+            </div>
+          </form>
 ```
 
 5) AdminHeader ใส่โค้ด Sign Out
