@@ -1,17 +1,27 @@
 # React Login Form
 
-1) สร้างโปรเจ็คใหม่และติดตั้ง react-login-form
+โปรเจ็คนี้ใช้ React เวอร์ชัน 19 และ tailwindcss เวอร์ชัน 4 โดยมีการใช้ react-hook-form เพื่อจัดการฟอร์ม และ sweetalert2 เพื่อแสดงข้อความแจ้งเตือน
 
+
+## 1) สร้างโปรเจ็คใหม่และติดตั้ง react-login-form
+
+### สร้างโปรเจ็คใหม่ด้วยคำสั่ง
+```
+npm create vite@latest
+```
+
+
+### ติดตั้ง dependencies ที่จำเป็น
 ```
 npm install react-router tailwindcss @tailwindcss/vite react-hook-form sweetalert2 lucide-react
 ```
 
-index.css
+### index.css แก้ไขเพื่อใช้งาน tailwindcss
 ```
 @import "tailwindcss";
 ```
 
-vite.config.ts
+### vite.config.ts แก้ไขเพื่อใช้งาน tailwindcss
 ```
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
@@ -23,9 +33,12 @@ export default defineConfig({
 })
 ```
 
-2) สร้าง layouts/AdminLayout.tsx และ layouts/AuthLayout.tsx
+### ทำการคัดลอกไฟล์สำหรับเริ่มต้นโปรเจ็ค
 
-AdminLayout.tsx
+คัดลอกไฟล์จาก [08_react_form_start_files.zip](files/08_react_form_start_files.zip)
+## 2) สร้าง layouts/AdminLayout.tsx และ layouts/AuthLayout.tsx
+
+### AdminLayout.tsx
 ```
 import AdminHeader from "../components/AdminHeader";
 import Footer from "../components/Footer";
@@ -46,7 +59,7 @@ export default function AdminLayout() {
 
 ```
 
-AuthLayout.tsx
+### AuthLayout.tsx
 ```
 import { Outlet } from "react-router";
 
@@ -64,7 +77,7 @@ export default function AuthLayout() {
 
 ```
 
-3) กำหนด routes เบื้องต้น ใน App.tsx
+## 3) กำหนด routes เบื้องต้น ใน App.tsx
 
 ```
 import {Route, Routes, BrowserRouter} from 'react-router';
@@ -111,9 +124,9 @@ export default function App() {
 ```
 
 
-4) สร้าง pages/auth/login.tsx
+## 4) สร้าง pages/auth/login.tsx
 
-index.css
+### index.css
 
 ```
 @import "tailwindcss";
@@ -137,7 +150,7 @@ index.css
 }
 ```
 
-Login.tsx 
+### Login.tsx 
 
 ```
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -297,7 +310,7 @@ function Login() {
 export default Login;
 
 ```
-5) สร้าง routes/ProtectedRoute.tsx
+## 5) สร้าง routes/ProtectedRoute.tsx สำหรับป้องกันการเข้าถึงหน้า admin โดยไม่ได้ login
 
 ```
 import { ReactNode } from "react"
@@ -320,7 +333,7 @@ const ProtectedRoute = ({
 export default ProtectedRoute
 ```
 
-6) แก้ไข App.tsx
+## 6) แก้ไข App.tsx ให้มีการใช้ ProtectedRoute เพื่อป้องกันการเข้าถึงหน้า admin โดยไม่ได้ login
 
 ```
 {/* Admin Page */}
@@ -330,7 +343,7 @@ export default ProtectedRoute
 </Route>
 ```
 
-7) AdminHeader ใส่โค้ด Sign Out
+## 7) AdminHeader ใส่โค้ด Sign Out
 
 
 ```
