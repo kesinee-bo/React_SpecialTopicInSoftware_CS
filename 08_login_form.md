@@ -361,5 +361,38 @@ export default ProtectedRoute
 
 
 
+## Screenshots
+
+### หน้า login
+<img src="images/08_01_00_login.png" alt="login">
+
+
+<img src="images/08_02_login_countdown.png" alt="count_down">
+
+
+<img src="images/08_01_05_login_failed.png" alt="login_failed">
+
+### form validation
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+  <img src="images/08_01_01_required.png" alt="required">
+  <img src="images/08_01_02_min.png" alt="min">
+  <img src="images/08_01_03_max.png" alt="max">
+  <img src="images/08_01_04_pattern.png" alt="pattern">
+</div>
+
+
+### หน้า admin และ sign out
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+  <img src="images/08_03_adminpage.png" alt="admin">
+  <img src="images/08_04_confirm_signout.png" alt="signout">
+  <img src="images/08_05_signout_success.png" alt="success">
+</div>
+
+
+### 404 Not Found
+<img src="images/08_06_notfound.png" alt="notfound">
+
+
+
 
 
