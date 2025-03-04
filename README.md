@@ -25,3 +25,7 @@
 
 ### Week 6
 * [ตัวอย่างการทำส่วน Login](08_login_form.md)
+
+
+### Week 7
+* [ตัวอย่างการติดต่อ API](09_api_connect.md)

@@ -1,4 +1,4 @@
-# React Login Form
+# ตัวอย่างการทำส่วน Login
 
 โปรเจ็คนี้ใช้ React เวอร์ชัน 19 และ tailwindcss เวอร์ชัน 4 โดยมีการใช้ react-hook-form เพื่อจัดการฟอร์ม และ sweetalert2 เพื่อแสดงข้อความแจ้งเตือน
 
