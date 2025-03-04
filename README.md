@@ -29,3 +29,4 @@
 
 ### Week 7
 * [ตัวอย่างการติดต่อ API](09_api_connect.md)
+* [อธิบายการใช้งาน useEffect ใน React](10_useEffect.md)
