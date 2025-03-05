@@ -49,7 +49,13 @@ export const useBooks = () => {
   //Code
 
   // 📌  3) ฟังก์ชันจัดการ Error
-  //Code
+    const handleApiError = (err: unknown) => {
+    const errorMessage = axios.isAxiosError(err)
+      ? err.response?.data?.message || err.message
+      : "An unknown error occurred";
+    setError(errorMessage);
+    throw new Error(errorMessage);
+  };
   
   
 
