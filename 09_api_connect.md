@@ -43,7 +43,10 @@ export const useBooks = () => {
   const [error, setError] = useState<string | null>(null);
 
   // 📌 5) ดึงข้อมูลหนังสือเมื่อ Component โหลด
-  //Code
+   useEffect(() => {
+    fetchBooks();
+  }, []);
+
 
   // 📌 4) ดึงข้อมูลหนังสือ
   const fetchBooks = async () => {
