@@ -197,7 +197,43 @@ const [isLoading, setIsLoading] = useState(false);
 
 ปรับเปลี่ยนให้มีการเรียกใช้งาน AuthService.signIn ในฟังก์ชัน onSubmit
 ```
- //Code
+ const onSubmit: SubmitHandler<IFormInput> = async (data) => {
+    setIsLoading(true);
+
+    try {
+
+      const response = await AuthService.signIn({
+        username: data.email,
+        role: "admin",
+        password: data.password,
+      });
+
+
+      if (!response.error) {
+      
+          // โค้ดเดิม
+          // let timerInterval: number;
+          // Swal.fire...
+      
+      } else {
+	      Swal.fire({
+              icon: "error",
+              title: "Login failed",
+              text: "Please enter email and password",
+        });
+	    }
+	    
+      } catch (error) {
+      console.error("Login error:", error);
+      Swal.fire({
+        icon: "error",
+        title:  "เข้าสู่ระบบไม่สำเร็จ",
+        text: "เกิดข้อผิดพลาดบางอย่าง",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
 ```  
   
 กำหนดให้ปุ่ม Login มีการแสดงผลตามสถานะของ isLoading โดยหาก isLoading เป็น true ให้แสดงข้อความ "กำลังเข้าสู่ระบบ..." และปุ่มจะไม่สามารถกดได้
