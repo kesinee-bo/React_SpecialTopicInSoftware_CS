@@ -24,7 +24,16 @@ const api = axios.create({
 });
 
 // 📌 2) Middleware: เพิ่ม Authorization Header โดยอัตโนมัติ
-//Code
+api.interceptors.request.use(
+  (config) => {
+    const token = localStorage.getItem("access_token");
+    if (token) {
+      config.headers.Authorization = `bearer ${token}`;
+    }
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
 
 
 
