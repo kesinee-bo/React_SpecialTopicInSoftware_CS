@@ -238,6 +238,12 @@ const [isLoading, setIsLoading] = useState(false);
   
 กำหนดให้ปุ่ม Login มีการแสดงผลตามสถานะของ isLoading โดยหาก isLoading เป็น true ให้แสดงข้อความ "กำลังเข้าสู่ระบบ..." และปุ่มจะไม่สามารถกดได้
 ```
-//Code
+ <button
+  type="submit"
+  className="w-full bg-black hover:bg-gray-700 text-white font-bold py-2 px-4 mb-6 rounded-lg"
+  disabled={isLoading}
+>
+  {isLoading ? "กำลังเข้าสู่ระบบ..." : "Login"}
+</button>
 ```
 
