@@ -137,8 +137,10 @@ class AuthService {
     try {
 
       // 📌 4) ส่งข้อมูลไปยัง API
-      const response = null; 
-      //Code
+       const response = await api.post<AuthResponse>(
+        "/users/auth/signin/",
+        credentials
+      );
 
       // 📌 5) หาก login สำเร็จให้เก็บ token ใน local storage
       //Code
