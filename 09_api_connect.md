@@ -235,6 +235,17 @@ const [isLoading, setIsLoading] = useState(false);
     }
   };
 ```  
+
+แก้ไขการเก็บ token ใน localStorage ให้เก็บเป็นชื่อ key ที่ตรงกับที่ใช้ใน BookService.ts
+
+จากเดิม
+```
+localStorage.setItem("access_token", "1234567890");
+```
+แก้เป็น
+```
+localStorage.setItem("access_token", response.accessToken);
+```
   
 กำหนดให้ปุ่ม Login มีการแสดงผลตามสถานะของ isLoading โดยหาก isLoading เป็น true ให้แสดงข้อความ "กำลังเข้าสู่ระบบ..." และปุ่มจะไม่สามารถกดได้
 ```
