@@ -46,7 +46,16 @@ export const useBooks = () => {
   //Code
 
   // 📌 4) ดึงข้อมูลหนังสือ
-  //Code
+  const fetchBooks = async () => {
+    try {
+      setLoading(true);
+      const response = await api.get('/books');
+      setBooks(response.data.data);
+      setLoading(false);
+    } catch (err) {
+      return handleApiError(err);
+    }
+  };
 
   // 📌  3) ฟังก์ชันจัดการ Error
     const handleApiError = (err: unknown) => {
