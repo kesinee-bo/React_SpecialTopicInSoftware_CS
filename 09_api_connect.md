@@ -143,7 +143,13 @@ class AuthService {
       );
 
       // 📌 5) หาก login สำเร็จให้เก็บ token ใน local storage
-      //Code
+      if ((!response.data.error) && response.data.accessToken) {
+        localStorage.setItem("access_token", response.data.accessToken);
+        localStorage.setItem(
+          "email",
+          JSON.stringify(credentials.username)
+        );
+      }
 
       return response.data;
     } catch (error) {
