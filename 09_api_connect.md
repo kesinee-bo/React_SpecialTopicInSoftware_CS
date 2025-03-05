@@ -107,15 +107,27 @@ services/AuthService.ts
 import axios from "axios";
 
 // 📌 1) กำหนด interface ของข้อมูลที่จะได้รับจาก API (authentication response)
-//Code
-
+interface AuthResponse {
+  error: boolean;
+  message: string;
+  userId: number;
+  accessToken: string;
+}
 
 // 📌 2) กำหนด interface ของข้อมูลที่จะส่งไปยัง API 
-//Code
-
+interface SignInCredentials {
+  username: string;
+  role:string;
+  password: string;
+}
 
 // 📌 3) สร้างตัวแปรของ axios โดยกำหนด base URL ที่ใช้ในการติดต่อ API
-//Code
+const api = axios.create({
+  baseURL: "http://localhost:3000/api/v2", // Match your API version from index.js
+  headers: {
+    "Content-Type": "application/json",
+  },
+});
 
 
 
