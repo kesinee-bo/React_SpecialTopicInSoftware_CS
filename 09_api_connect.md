@@ -15,7 +15,13 @@ import axios from 'axios';
 import Book from "../types/Book";
 
 // 📌 1) สร้าง Axios Instance
-//Code
+const api = axios.create({
+  baseURL: 'http://localhost:3000/api/v2',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  
+});
 
 // 📌 2) Middleware: เพิ่ม Authorization Header โดยอัตโนมัติ
 //Code
