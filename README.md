@@ -30,3 +30,7 @@
 ### Week 7
 * [ตัวอย่างการติดต่อ API](09_api_connect.md)
 * [อธิบายการใช้งาน useEffect ใน React](10_useEffect.md)
+
+
+### Week 8
+* [ตัวอย่าง ComSci Book Shop (CRUD)](11_crud_intro.md)
