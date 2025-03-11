@@ -1,5 +1,8 @@
 # ตัวอย่าง ComSci Book Shop (CRUD) : Part 3 หน้าแก้ไขข้อมูลหนังสือ
 
+
+![alt text](images/14_00_edit_book_page.png)
+
 ## 1) การเรียกใช้ Custom Hook และการดึงข้อมูลหนังสือจาก API
 
 ### วัตถุประสงค์

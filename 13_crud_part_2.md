@@ -1,5 +1,7 @@
 # ตัวอย่าง ComSci Book Shop (CRUD) : Part 2 หน้าการเพิ่มหนังสือใหม่
 
+![alt text](images/13_00_add_book_page.png)
+
 ## 1) การใช้ Navigation และการจัดการ State
 
 ### วัตถุประสงค์
