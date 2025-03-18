@@ -34,3 +34,7 @@
 
 ### Week 8
 * [ตัวอย่าง ComSci Book Shop (CRUD)](11_crud_intro.md)
+
+
+### Week 9
+* [ตัวอย่างการสร้างส่วนตระกร้าสินค้าโดยใช้ useReducer ร่วมกับ useContext ใน React](16_cart_reducer.md)
