@@ -38,3 +38,8 @@
 
 ### Week 9
 * [ตัวอย่างการสร้างส่วนตระกร้าสินค้าโดยใช้ useReducer ร่วมกับ useContext ใน React](16_cart_reducer.md)
+
+
+
+### Week 10
+* [ตัวอย่างการ Deploy โปรเจ็ค React](17_deploy.md)
