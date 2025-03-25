@@ -5,6 +5,8 @@
 * Deploy API ไปยัง [Render](https://render.com/)
 * Deploy React ผ่าน [Netlify](https://www.netlify.com/)
 
+![alt text](images/17_1_BookShop_API_arch.png)
+
 ### 1) สมัครสมาชิกบริการทั้งหมดที่ต้องใช้งาน 
 
 ### 2) สร้างฐานข้อมูลใน Aiven 
@@ -86,6 +88,8 @@ npm run build
 VITE_BASE_URL_API=https://xxxxxx.onrender.com/api/v2
 
 ## Ex-2 : ตัวอย่าง Memo App ซึ่งติดต่อกับฐานข้อมูล Supabase
+
+![alt text](images/17_2_BookShop_Supabase_arch.png)
 
 ### 1) สมัครสมาชิก [Supabase](https://supabase.com/)
 
